@@ -8,7 +8,7 @@ Please read each instruction carefully:
 
 ### `1.) Clone repository on your local machine`
 
-Clone it on your local machine by running: git clone <clone-link-https>
+Clone it on your local machine by running: git clone `<clone-link-https>`
 
 ### `2.) Install Dependencies`
 
