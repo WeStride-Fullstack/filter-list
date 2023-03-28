@@ -1,23 +1,15 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { useState } from "react";
+import "./App.css";
+import FoodList from "./components/FoodList";
+import SearchBar from "./components/SearchBar";
+import { mockFoodList } from "./mock/mockdata";
 
 function App() {
+  const [foodList, setFoodList] = useState(mockFoodList);
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="container d-flex flex-column justify-content-center align-items-center">
+      <SearchBar />
+      <FoodList foodList={foodList} />
     </div>
   );
 }
